@@ -8,9 +8,9 @@ Additional 'Actions' will be added as this project continues, starting with the 
 Zonie Schedule - Sequential Command Outline:
 
 1 User will enter a starting utterance to launch the action: "Zonie Schedule"
-   followed by intent-1: "a meeting" 
-      [Optional Segment] Responded to by: "when?"
-         followed by details input-1 & input-2:"at <4pm> in <new york> "
+   - followed by intent-1: "a meeting" 
+      -  [Optional Segment] Responded to by: "when?"
+         -   followed by details input-1 & input-2:"at <4pm> in <new york> "
   
 2 First Application will obtain local timezone based on: (TO BE DECIDED)
   - GEO(Mobile Device)
@@ -22,8 +22,8 @@ Zonie Schedule - Sequential Command Outline:
     
 4 Logic on Lambda[AWS] or Local[GAsst] will then subtract TZ from LZ generating tDiff
 
-5 The Amazon or gCal api will then be called to schedule a meeting at <input-1 + tDiff>
-  This may require an AuthToken exchange unless it can be done with an existing google assistant provider.
-      https://clearbridgemobile.com/how-to-develop-a-google-assistant-app-implementing-google-calendar-api/
+5 The Amazon or gCal api will then be called to schedule a meeting at <input-1 + tDiff>:
+  - This may require an AuthToken exchange unless it can be done with an existing google assistant provider.
+    -  https://clearbridgemobile.com/how-to-develop-a-google-assistant-app-implementing-google-calendar-api/
     
 6 Confirmation will be pushed to the screen |'ed from normal gCal scheduler if possible.
