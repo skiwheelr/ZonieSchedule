@@ -14,7 +14,7 @@ Zonie Schedule - Sequential Command Outline:
   
 2 First Application will obtain local timezone based on: (TO BE DECIDED)
   - GEO(Mobile Device)
-  - Curent Calendat Timezone
+  - Current Calendar Timezone
 
 3 This will launch an API to gather the UTC of:
     - LocalZonie LZ = UTC difference (+/-) local timezone (e.g. NY is UTC-5)
