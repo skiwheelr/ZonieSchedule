@@ -16,13 +16,13 @@ Zonie Schedule - Sequential Command Outline:
   - GEO(Mobile Device)
   - Current Calendar Timezone
 
-3 This will launch an API to gather the UTC of:
+3 This will call a Geocoding API Endpoint to gather the UTC of:
     - LocalZonie LZ = UTC difference (+/-) local timezone (e.g. NY is UTC-5)
     - TargetZonie TZ = UTC difference (+/-) of input-2 (e.g. Phoenix is UTC-7)
     
 4 Logic on Lambda[AWS] or Local[GAsst] will then subtract TZ from LZ generating tDiff
 
-5 The Amazon or gCal api will then be called to schedule a meeting at <input-1 + tDiff>:
+5 The Amazon or gCal endpoint will then be called to schedule a meeting at <input-1 + tDiff>:
   - This may require an AuthToken exchange unless it can be done with an existing google assistant provider.
     -  https://clearbridgemobile.com/how-to-develop-a-google-assistant-app-implementing-google-calendar-api/
     
