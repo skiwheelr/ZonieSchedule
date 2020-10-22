@@ -1,0 +1,15 @@
+let tcity = "dublin";
+let timedata;
+
+
+const getCoord = async (addr) =>{
+	await fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + addr + '&key=AIzaSyBFZgNTdNsGohi__dS5UuDu5J1gsJa41y4')
+		.then(response => { return response });
+};
+
+timedata = getCoord(tcity);
+console.log(timedata);
+
+// Returns
+// Promise { <pending> }
+
